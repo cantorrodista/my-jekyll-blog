@@ -4,7 +4,7 @@
  <title>Alfredo Solano | cantorrodista.com</title>
  <link href="http://cantorrodista.com/atom.xml" rel="self"/>
  <link href="http://cantorrodista.com/"/>
- <updated>2010-01-26T00:24:41+01:00</updated>
+ <updated>2010-01-26T00:52:23+01:00</updated>
  <id>http://cantorrodista.com/</id>
  <author>
    <name>Alfredo Solano</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Post de preuba</title>
-   <link href="http://cantorrodista.com/2010/01/25/testing-jekyll-post.html"/>
+   <link href="http://cantorrodista.com/blog/jekyll/ruby/2010/01/25/testing-jekyll-post.html"/>
    <updated>2010-01-25T00:00:00+01:00</updated>
-   <id>http://cantorrodista.com/2010/01/25/testing-jekyll-post</id>
+   <id>http://cantorrodista.com/blog/jekyll/ruby/2010/01/25/testing-jekyll-post</id>
    <content type="html">&lt;h2&gt;Post de preuba&lt;/h2&gt;
 
 &lt;p&gt;dfasdfasdfasdfasdfasdf

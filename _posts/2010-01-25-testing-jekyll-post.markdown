@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Post de preuba
+categories:
+  - jekyll
+  - blog
+  - ruby
+
 ---
 
 ## {{page.title}} ##

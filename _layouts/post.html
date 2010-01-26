@@ -2,7 +2,16 @@
 layout: default
 ---
 <div id="post">
+
+    
 {{ content }}
+
+<div id="tags">
+	<h5>Categorías</h5>
+	{% for category in page.categories %}
+		{{category}}
+	{% endfor %}
+</div>
 </div>
  
 <div id="related">
