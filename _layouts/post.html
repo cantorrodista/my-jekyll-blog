@@ -3,22 +3,30 @@ layout: default
 ---
 <div id="post">
 
-    
-{{ content }}
 
-<div id="tags">
-	<h5>Categorías</h5>
-	{% for category in page.categories %}
+{{ content }}
+<div id="date">
+<p>Publicado el {{ page.date | date_to_string }}</p>
+</div>
+<div id="categories">
+
+<dl>
+    <dt>Publicado en: </dt>
+    <dd>
+    {% for category in page.categories %}
 		{{category}}
 	{% endfor %}
+    </dd>
+</dl>
+
+
+</div>
+<div class="share_tab">
+<fb:share-button class="url" href="http://cantorrodista.com{{ page.url }}" type="box_count"></fb:share-button>
+</div>
+<div class="fb_comments">
+<h3>Deja tu comentario: </h3>
+    <fb:comments> </fb:comments>
 </div>
 </div>
- 
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+

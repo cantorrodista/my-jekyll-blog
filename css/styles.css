@@ -71,7 +71,7 @@ blockquote p {
 	height: 1%;
 }
 
-a { 	
+a {
 	color:#0E4A86;
 }
 a:hover {
@@ -100,7 +100,7 @@ fieldset p label {
 fieldset form.admin_form p label {
 	width: 0;
 	float:none;
-	
+
 }
 fieldset form input, fieldset form select, fieldset form textarea,fieldset form button {
 	padding:5px;
@@ -336,7 +336,7 @@ div.content {
 	border-bottom:5px solid #e0e0e0;
 }
 div.content h1 {
-	font-size:37px;
+	font-size:30px;
 	padding:0 0 10px;
 }
 
@@ -412,7 +412,7 @@ div.content h1 {
 	line-height: 0;
 	height: 0;
 }
- 
+
 .clear {
 	display: inline-block;
 }
@@ -424,7 +424,7 @@ div.content h1 {
 	height: 10px;
 }
 /** footer **/
-div.copyright { 
+div.copyright {
 	clear: both;
 }
 div.copyright p {
@@ -446,7 +446,7 @@ div.copyright p a {
 	background: #333333;
 	color: #CCCCCC;
 	padding: 10px 0 0 0;
-	
+
 }
 
 #footer ul {
@@ -495,7 +495,41 @@ div.copyright p a {
 	display:none;
 }
 
+#date {
+    font-weight: bold;
+    font-size: 12px;
+}
+#categories{
+    margin-bottom: 12px;
+    display: inline;
 
+}
+
+#categories dl{
+    float:left;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+#categories dl dt{
+    float:left;
+    margin-right: 5px;
+}
+
+#categories dl dd{
+    float: left;
+    color: #1159A1;
+}
+
+.share_tab{
+    float: right;
+    margin-right: 180px;
+}
+
+.fb_comments {
+    margin-top: 5h5px;
+    padding-left: 10px;
+}
 /*Widget coctelera*/
 .lcw2cont { font: 100% Arial; width: 230px; margin-bottom: 25px;}
 .lcw2cont a { color: #006699;}

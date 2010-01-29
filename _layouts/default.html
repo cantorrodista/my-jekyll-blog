@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>{{ page.title }}</title>
@@ -12,23 +13,31 @@
 
 </head>
 <body>
+	{% include facebook_init.html %}
 	<div id="contact">
 		<a id="left_contact" href="/contacto">Sugerencias</a>
 	</div>
 	<div id="wrapper">
 		<div class="inner-wrapper">
-			{% include header.html %}		
-			{% include menu.html %}		
+			{% include header.html %}
+			{% include menu.html %}
 			<div class="body clear">
 				<div class="content">
 					{{ content }}
 				</div>
-				{% include sidebar.html %}		
+				{% include sidebar.html %}
 			</div>
 			{% include footer.html %}
 			{% include copyright.html %}
 		</div>
 	</div>
 	{% include google_analytics.html %}
+     <script type="text/javascript">
+    FB_RequireFeatures(["XFBML"], function(){
+        FB.Facebook.init("d14e821afaa27230e8244e858ac44a0e", "xd_receiver.htm");
+    });
+</script>
+
 </body>
 </html>
+

@@ -2,20 +2,12 @@
 layout: post
 title: Post de preuba
 categories:
-  - jekyll
-  - blog
-  - ruby
+    - desarrollo
+    - jekyll
 
 ---
 
-## {{page.title}} ##
-
-dfasdfasdfasdfasdfasdf
-asdf
-asdfasdf
-af
-dfas
-dfasdfasfsaf
+# {{page.title}} #
 
 ### titulo h3 ###
 
@@ -26,8 +18,8 @@ dfasdfasfsaf
     def ruby
 		this is code
 	end
-	
-	
+
+
 
 #### Ahora codigo ruby ####
 
@@ -37,10 +29,3 @@ def foo
 end
 {% endhighlight %}
 
-
-
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}

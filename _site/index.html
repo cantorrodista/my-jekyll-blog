@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Alfredo Solano | cantorrodista.com</title>
@@ -12,6 +13,9 @@
 
 </head>
 <body>
+	 <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_ES" type="text/javascript"></script>
+
+
 	<div id="contact">
 		<a id="left_contact" href="/contacto">Sugerencias</a>
 	</div>
@@ -30,43 +34,98 @@
 	</div>
 
 
-	<h1><a href="http://cantorrodisat.com">c<span>a</span>nt<span>o</span>rr<span>o</span>d<span>i</span>st<span>a</span></a></h1>
-</div>		
+	<h1><a href="http://cantorrodista.com">c<span>a</span>nt<span>o</span>rr<span>o</span>d<span>i</span>st<span>a</span></a></h1>
+</div>
+
+
 			
 <div class="menu">
 	<ul class="clear">
-		<li class="current"><a href="index.html"><span>Blog</span></a></li>
-		<li><a href="#"><span>Lo que digo</span></a></li>
+		<li class="current"><a href="/index.html"><span>Blog</span></a></li>
+		<li><a href="/sobre-mi.html"><span>Sobre mi</span></a></li>
 
-		<li><a href="#"><span>Lo que hago</span></a></li>
-		<li><a href="#"><span>Contacto</span></a></li>
+
+	<li><a href="/contacto.html"><span>Contacto</span></a></li>
 	</ul>
-</div>		
+</div>
+
+
 			<div class="body clear">
 				<div class="content">
 					<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+  <div class="posts_list">
     
-      <li><span>25 Jan 2010</span> &raquo; <a href="/blog/jekyll/ruby/2010/01/25/testing-jekyll-post.html">Post de preuba</a></li>
-    
-  </ul>
+            <div id="post">
+
+
+<h1>Post de preuba</h1>
+
+<h3>titulo h3</h3>
+
+<p><em>wadus
+</em>wadus
+*wadus</p>
+
+<pre><code>def ruby
+    this is code
+end
+</code></pre>
+
+<h4>Ahora codigo ruby</h4>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">foo</span>
+  <span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
+<span class="k">end</span>
+</code></pre>
 </div>
+
+
+
+
+<div id="date">
+<p>Publicado el 25 Jan 2010</p>
+</div>
+
+<div id="categories">
+
+<dl>
+    <dt>Publicado en: </dt>
+    <dd>
+    
+		desarrollo
+	
+		jekyll
+	
+    </dd>
+</dl>
+
+
+</div>
+
+</div>
+
+
+
+
+
+    
+  </div>
+</div>
+
 
 				</div>
 				<div class="sidebar">
 	<ul>
 
-		<li>
-			<h3>Categorías</h3>
-			<ul>
-				<li><a href="#">wadus</a></li>
-				<li><a href="#">wadus</a></li>
-				<li><a href="#">wadus</a></li>
-				<li><a href="#">wadus</a></li>
 
-			</ul>
-		</li>
+		<li>
+            <h3>Posts relacionados</h3>
+             <ul class="posts">
+                
+            </ul>
+        </li>
+
+
 
 	</ul>
 
@@ -94,7 +153,8 @@
 
 
 </div>
-		
+
+
 			</div>
 			<div id="footer">
 	<ul>
@@ -166,5 +226,12 @@ try {
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
 
+     <script type="text/javascript">
+    FB_RequireFeatures(["XFBML"], function(){
+        FB.Facebook.init("d14e821afaa27230e8244e858ac44a0e", "xd_receiver.htm");
+    });
+</script>
+
 </body>
 </html>
+
