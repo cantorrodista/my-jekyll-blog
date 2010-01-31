@@ -1,15 +1,8 @@
 ---
 layout: post
-title: mi nuevo
+title: My new blog
 categories:
-    - desarrollo
+    - develpment
 
 ---
 
-
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
