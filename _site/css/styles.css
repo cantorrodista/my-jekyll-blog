@@ -339,7 +339,7 @@ div.content {
 div.content h1, div.content h1 a {
 	padding:0 0 10px;
 	font-size: 35px;
-	letter-spacing:0px;
+	letter-spacing:-3px;
 	color: #333;
 }
 
