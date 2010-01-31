@@ -72,7 +72,8 @@ blockquote p {
 }
 
 a {
-	color:#0E4A86;
+	color:#1159A1;
+	text-decoration: none;
 }
 a:hover {
 	color:#0A3057;
