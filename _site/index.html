@@ -9,7 +9,7 @@
       <meta name="description" content="blog personal y diversos desvarios de alfredo solano | cantorrodista.com" />
 	           <meta name="keywords" content="cantorrodista, alfredo solano, the cocktail, desarrollo,web, rails, ruby,isabelinos,freelance,iwannagothere" />
 	<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-
+<meta name="google-site-verification" content="MKcxeFRNWCsS18t_5vLIw9PdbjXRQcab-Hfs2_jO0u4" />
 	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
 
 </head>
@@ -42,7 +42,7 @@
 			
 <div class="menu">
 	<ul class="clear">
-		<li class="current"><a href="/index.html"><span>Blog</span></a></li>
+		<li class="current"><a href="/"><span>Blog</span></a></li>
 		<li><a href="/sobre-mi.html"><span>Sobre mi</span></a></li>
 
 
@@ -59,19 +59,22 @@
             <div id="post">
 
 
-    <h1><a href="/2010/01/31/inaugurando-mi-blog.html">mi nuevo</a></h1>
+    <h1><a href="/2010/01/31/inaugurando-mi-blog.html">Inaugurando mi blog</a></h1>
 <div id="date">
 <p>Publicado el 31 Jan 2010</p>
 </div>
 <div id="content">
+<p>Después de mucho tiempo pensando en empezar a escribir, por fin me he decidido. Pretendo escribir sobre mi día a día en el mundo del desarrollo web en <a href="http://the-cocktail.com/">The Cocktail</a> y como freelance, y también sobre otras idas y venidas de olla.</p>
 
+<p>A modo de introducción decir que éste site esta desarrollado con <a href="http://github.com/mojombo/jekyll">jekyll</a> por recomendación directa de <a href="http://hronia.blogalia.com/">pantulis</a> lo que me costo tirar a la basura toda una tarde de desarrollo en rails. La gracia de jekyll esta en que los posts los escribes en <a href="http://en.wikipedia.org/wiki/Markdown">markdown</a> y los deployas directamente a producción, jekyll se encarga de generarte los html estáticos para ti. He incluido un par de widgets de facebook, tanto para compartir cualquier contenido, como para comentarlo.</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
-<span class="k">end</span>
+<p>Para el deploy en producción de cada post he creado un alias en mi .bash_login:</p>
+
+<pre><code>alias deploy_blog="cd path/to/jekyll/code &amp;&amp; echo 'Creando Html...' &amp;&amp; jekyll --pygments 
+&amp;&amp; echo 'Pushing...' &amp;&amp; rsync -avz --delete _site/ user@server.domain:path/to/directory "
 </code></pre>
-</div>
 
+<p>El código al completo del blog lo tenéis disponible <a href="http://github.com/cantorrodista/my-jekyll-blog">aquí</a>.</p>
 
 </div>
 
@@ -144,7 +147,7 @@
 			<h3>Últimos posts</h3>
 			<ul>
 				
-				<li><a href="/2010/01/31/inaugurando-mi-blog.html">mi nuevo</a></li>
+				<li><a href="/2010/01/31/inaugurando-mi-blog.html">Inaugurando mi blog</a></li>
 				
 			</ul>
 		</li>
