@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Alfredo Solano | cantorrodista.com
+title: blog
 ---
 
 <div id="home">
   <div class="posts_list">
-    {% for post in site.posts limit:1 %}
+    {% for post in site.posts limit:10 %}
             <div id="post">
 
 
@@ -16,26 +16,8 @@ title: Alfredo Solano | cantorrodista.com
 <div id="content">
 {{ post.content}}
 </div>
-<div id="categories">
-
-<dl>
-    <dt>Publicado en: </dt>
-    <dd>
-    {% for category in page.categories %}
-		{{category}}
-	{% endfor %}
-    </dd>
-</dl>
-
 
 </div>
-
-</div>
-
-
-
-
-
     {% endfor %}
   </div>
 </div>

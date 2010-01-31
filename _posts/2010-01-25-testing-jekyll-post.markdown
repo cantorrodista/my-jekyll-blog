@@ -4,12 +4,10 @@ title: Post de preuba
 categories:
     - desarrollo
     - jekyll
-
+published: true
 ---
 
-# {{page.title}} #
 
-### titulo h3 ###
 
 *wadus
 *wadus

@@ -1,7 +1,7 @@
 <div class="sidebar">
 	<ul>
 
-
+		{% if site.related_posts %}
 		<li>
             <h3>Posts relacionados</h3>
              <ul class="posts">
@@ -10,33 +10,53 @@
              {% endfor %}
             </ul>
         </li>
-
+		{% endif %}
 
 
 	</ul>
-
-	<div class="lcw2cont">
-		<div class="lcw2h">
-			<div class="lcw2b2"></div>
-			<div class="lcw2b1"></div>
-			<div class="lcw2hc">
-				<a href="http://cantorrodista.lacoctelera.net">cantorrodista</a>
-			</div>
-		</div>
-		<div id="lcw2-photos-content" class="lcw2c">
-			<script src="http://www.lacoctelera.com/cantorrodista/widget_fotos"></script>
-		</div>
-		<div class="lcw2f">
-			<div class="lcw2fc">
-				<a href="http://www.lacoctelera.com" id="lcw2logo"></a>
-				<a href="http://www.lacoctelera.com" title="Crea tu blog en La Coctelera - gratis, fácil y rápido">crear blog</a>
-			</div>
-			<div class="lcw2b1"></div>
-			<div class="lcw2b2"></div>
-		</div>
+	<div class="sidebar_widgets">
+	
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 5,
+	  interval: 6000,
+	  width: 230,
+	  height: 300,
+	  theme: {
+	    shell: {
+	      background: '#0C0C0C',
+	      color: '#CCCCCC'
+	    },
+	    tweets: {
+	      background: '#333333',
+	      color: '#CCCCCC',
+	      links: '#D4C792'
+	    }
+	  },
+	  features: {
+	    scrollbar: false,
+	    loop: false,
+	    live: false,
+	    hashtags: true,
+	    timestamp: true,
+	    avatars: false,
+	    behavior: 'all'
+	  }
+	}).render().setUser('cantorrodista').start();
+	</script>
 	</div>
+	<div class="sidebar_widgets">
+	<div style="width:228px; text-align:center;"><object type="application/x-shockwave-flash" data="http://media.roytanck.com/flickrwidget.swf" width="228" height="258"><param name="movie" value="http://media.roytanck.com/flickrwidget.swf" /><param name="bgcolor" value="#333333" /><param name="wmode" value="transparent" /><param name="flashvars" value="feed=http%3A//api.flickr.com/services/feeds/photos_public.gne%3Fid%3D26210361@N07%26amp%3Blang%3Den-us%26amp%3Bformat%3Datom" /><param name="AllowScriptAccess" value="always"/><p></div>
+		
+	</div>
+	<div class="sidebar_widgets">
+		
+
 	<embed src="http://iwannagothere.com/swf/cantorrodista" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="230" height="260"></embed>
 
-
+	</div>
 </div>
 

@@ -1,52 +1,55 @@
 <div id="footer">
 	<ul>
+
 		<li>
-			<h3>Lorem Ipsum</h3>
+			<h3>Últimos posts</h3>
 			<ul>
-				<li><a href="#">Fusce dui neque fringilla</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
+				{% for post in site.posts limit:7 %}
+				<li><a href="{{post.url}}">{{post.title}}</a></li>
+				{% endfor %}
 			</ul>
 		</li>
 		<li>
-			<h3>Lorem Ipsum</h3>
+			<h3>Por dónde me muevo</h3>
 			<ul>
-				<li><a href="#">Fusce dui neque fringilla</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
+				<li><a href="http://iwannagothere.com/users/cantorrodista">iwannagothere</a></li>
+				<li><a href="http://github.com/cantorrodista">github</a></li>				
+				<li><a href="http://www.lacoctelera.com/cantorrodista/fotos">la coctelera</a></li>
+				<li><a href="http://www.partigi.com/cantorrodista">partigi</a></li>
+				<li><a href="http://unvlog.com/cantorrodista">unvlog</a></li>
+				<li><a href="http://delicious.com/cantorrodista">delicious</a></li>
 			</ul>
 		</li>
 		<li>
-			<h3>Volutpat Dolore</h3>
+			<h3>Sobre mí</h3>
 			<ul>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Fusce dui neque fringilla</a></li>
+				<li><a href="/sobre-mi.html">Quién soy</a></li>
+				<li><a href="/contacto.html">Contacto</a></li>
 			</ul>
 		</li>
+
 		<li>
-			<h3>Magna Bibendum</h3>
-			<ul>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-				<li><a href="#">Eget tempor eget nonummy</a></li>
-				<li><a href="#">Nec metus sed donec</a></li>
-				<li><a href="#">Magna lacus bibendum mauris</a></li>
-				<li><a href="#">Velit semper nisi molestie</a></li>
-			</ul>
+			<div class="lcw2cont">
+				<div class="lcw2h">
+					<div class="lcw2b2"></div>
+					<div class="lcw2b1"></div>
+					<div class="lcw2hc">
+						<a href="http://cantorrodista.lacoctelera.net">cantorrodista</a>
+					</div>
+				</div>
+				<div id="lcw2-photos-content" class="lcw2c">
+					<script src="http://www.lacoctelera.com/cantorrodista/widget_fotos"></script>
+				</div>
+				<div class="lcw2f">
+					<div class="lcw2fc">
+						<a href="http://www.lacoctelera.com" id="lcw2logo"></a>
+						<a href="http://www.lacoctelera.com" title="Crea tu blog en La Coctelera - gratis, fácil y rápido">crear blog</a>
+					</div>
+					<div class="lcw2b1"></div>
+					<div class="lcw2b2"></div>
+				</div>
+			</div>
+		
 		</li>
 	</ul>
 	<div style="clear: both;">&nbsp;</div>

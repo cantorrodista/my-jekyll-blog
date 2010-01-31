@@ -139,8 +139,9 @@ h1 a:hover {
 	letter-spacing:-5px;
 	text-decoration:none;
 }
+
 h2 {
-	color:#111111;
+	color:#333;
 	font-family:Arial,Helvetica,sans-serif;
 	font-size:31px;
 	font-weight:bold;
@@ -148,7 +149,7 @@ h2 {
 	padding-bottom:10px;
 }
 h3 {
-	color:#111111;
+	color:#333;
 	font-size:20px;
 	padding-bottom:10px;
 }
@@ -335,9 +336,11 @@ div.content {
 	width:700px;
 	border-bottom:5px solid #e0e0e0;
 }
-div.content h1 {
-	font-size:30px;
+div.content h1, div.content h1 a {
 	padding:0 0 10px;
+	font-size: 35px;
+	letter-spacing:0px;
+	color: #333;
 }
 
 
@@ -527,7 +530,7 @@ div.copyright p a {
 }
 
 .fb_comments {
-    margin-top: 5h5px;
+    padding: 55px 10px;
     padding-left: 10px;
 }
 /*Widget coctelera*/
@@ -555,3 +558,20 @@ div.copyright p a {
 
 .lcw2f div { background: #4C4C4C; }
 
+.sidebar_widgets{
+	padding-bottom: 20px;
+}
+
+#post, #about{
+	padding: 0 10px;
+}
+
+#about img {
+	float: left;
+  margin-right: 15px;
+	border:10px solid;
+}
+
+#profile_data {
+	padding-top: 10px;
+}
