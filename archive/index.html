@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archivo
+---
+ 
+<h1>Archivo</h1>
+ 
+<ul>
+{% for y in (2007..2025) reversed %}
+  {% if site.collated_posts[y] %}
+    <li><a href="/{{y}}/">{{ y }}</a>
+    <ul>
+      {% for m in (01..12) reversed %}
+        {% if site.collated_posts[y][m] %}
+          <li><a href='/{{ y }}/{{ m | to_month_integer }}/'>{{ m | to_month}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    </li>
+  {% endif %}
+
+{% endfor %}
+</ul>

@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="post">
 
-    
+
 <h1>{{ page.title }}</h1>
 <div id="date">
 <p>Publicado el {{ page.date | date_to_string }}</p>
@@ -15,13 +15,11 @@ layout: default
 <dl>
     <dt>Hablo de </dt>
     <dd>
-    {% for category in page.categories %}
-		{{category}}
+    {% for tag in page.tags %}
+		<a href="/tags/{{tag}}/">{{tag}}</a>
 	{% endfor %}
     </dd>
 </dl>
-
-
 </div>
 <div class="share_tab">
 <fb:share-button href="http://cantorrodista.com{{ page.url }}" type="box_count"></fb:share-button>

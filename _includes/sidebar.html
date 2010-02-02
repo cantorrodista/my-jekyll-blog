@@ -12,7 +12,16 @@
         </li>
 		{% endif %}
 
-
+		{% if site.tags %}
+		<li>
+			<h3>Hablando de</h3>
+			  <ul class="posts">
+	              {% for tag in site.tags_list  %}
+	             <li><a href="/tags/{{tag}}">{{tag}}</a> ({{ site.tags[tag] | size }})</li>
+	             {% endfor %}
+	          </ul>
+		</li>
+		{% endif %}
 	</ul>
 	<div class="sidebar_widgets">
 	

@@ -2,7 +2,10 @@
 layout: post
 title: Inaugurando mi blog
 categories:
-    - jekyll
+- jekyll
+tags:
+- jekyll
+- markdown
 
 ---
 

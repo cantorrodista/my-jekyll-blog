@@ -1,0 +1,22 @@
+---
+layout: default
+---
+ 
+<h1><a href="/archive/">{{ page.year }}</a></h1>
+<ul>
+{% for m in (1..12) reversed %}
+  {% if site.collated_posts[page.year][m] %}
+    <li><a href="/{{page.year}}/{{ m | to_month_integer }}/">{{ m | to_month }}</a>
+    <ul>
+    {% for d in (1..31) reversed %}
+      {% if site.collated_posts[page.year][m][d] %}
+        {% for p in site.collated_posts[page.year][m][d] reversed %}
+          <li>{{p.date | date_to_string}}: <a href='{{ p.url }}'>{{ p.title }}</a></li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
